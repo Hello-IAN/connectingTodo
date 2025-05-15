@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-import TodoDeleteButton from './TodoDelete/TodoDeleteButton';
-import TodoEditButton from './TodoDelete/TodoEditButton';
+import TodoDeleteButton from './TodoButtons/TodoDeleteButton.tsx';
+import TodoEditButton from './TodoButtons/TodoEditButton.tsx';
 import { TTodo } from '../../../../types/todo';
 import { useEditModalContext } from '../../hooks/useEditModalContext';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../../types/stack';
-import TodoNaveButton from './TodoDelete/TodoNavButton.tsx';
+import TodoNaveButton from './TodoButtons/TodoNavButton.tsx.tsx';
 
 interface TodoCardProps {
 	todo:TTodo
