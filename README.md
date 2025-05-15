@@ -178,6 +178,7 @@ Use of `NativeStackNavigationProp` and `RouteProp` ensures strict typing between
 ---
 ## Simple Structure
 React Native
+```
 ├── Redux Toolkit (Store, Slice)
 │ └── Global state (todos list)
 ├── Redux-Saga (Side effects)
@@ -188,6 +189,7 @@ React Native
 │ └── Home → Todo Detail
 ├── FlatList
 │ └── Infinite scroll simulation (10 items per page)
+```
 
 ## 🛠 Setup
 
