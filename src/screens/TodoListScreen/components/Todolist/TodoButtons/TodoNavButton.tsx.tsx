@@ -1,13 +1,13 @@
 import React from 'react'
 import { Pressable, StyleSheet, Text } from 'react-native';
 
-interface TodoNaveButtonProps {
+interface TodoNavButtonProps {
 	moveTo: ()=>void;
 }
 
-function TodoNaveButton({
+function TodoNavButton({
 	moveTo
-}:TodoNaveButtonProps) {
+}:TodoNavButtonProps) {
 	return (
 		 <Pressable style={styles.deleteButton} onPress={moveTo}>
       <Text style={styles.deleteText}>자세히</Text>
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default TodoNaveButton
+export default TodoNavButton

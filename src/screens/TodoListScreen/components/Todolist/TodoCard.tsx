@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-import TodoDeleteButton from './TodoButtons/TodoDeleteButton.tsx';
-import TodoEditButton from './TodoButtons/TodoEditButton.tsx';
+import TodoDeleteButton from './TodoButtons/TodoDeleteButton';
+import TodoEditButton from './TodoButtons/TodoEditButton';
 import { TTodo } from '../../../../types/todo';
 import { useEditModalContext } from '../../hooks/useEditModalContext';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../../types/stack';
-import TodoNaveButton from './TodoButtons/TodoNavButton.tsx.tsx';
+import TodoNavButton from './TodoButtons/TodoNavButton.tsx';
 
 interface TodoCardProps {
 	todo:TTodo
@@ -41,7 +41,7 @@ export default function TodoCard({
 			</View>
 			<View style={styles.btnSection}>
 				<View style={styles.btnContainer}>
-					<TodoNaveButton moveTo={moveTo}/>
+					<TodoNavButton moveTo={moveTo}/>
 				</View>
 				<View style={styles.btnContainer}>
 					<TodoEditButton 
